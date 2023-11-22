@@ -7,10 +7,10 @@ const Navbar = () => {
     <div className="bg-white sticky z-50 top-0 inset-x-0 h-16">
       <header className="relative bg-white">
         <MaxWidthWrapper>
-          <div className="py-4">
+          <div className="py-4 flex items-center">
             {/* TODO: mobile nav */}
 
-            <div className="ml-4 flex lg:ml-0">
+            <div className="ml-4 lg:ml-0">
               <Link href="/">
                 <span className="text-2xl text-green-600 font-bold">
                   Digital Forest
