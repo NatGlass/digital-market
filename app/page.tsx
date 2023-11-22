@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import MaxWidthWrapper from "@/components/ui/maxWidthWrapper";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { ArrowRight, CheckCircle, Download, Leaf } from "lucide-react";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ const features = [
 
 const Home = () => {
   return (
-    <main>
+    <>
       <MaxWidthWrapper>
         <div className="mx-auto py-20 text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-5xl tracking-wide">
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </section>
-    </main>
+    </>
   );
 };
 
