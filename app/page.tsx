@@ -1,23 +1,23 @@
 import { Button } from "@/components/ui/button";
 import MaxWidthWrapper from "@/components/ui/maxWidthWrapper";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, CheckCircle, Download, Leaf } from "lucide-react";
 import Link from "next/link";
 
 const features = [
   {
     label: "Instant Access",
     icon: Download,
-    description: "Instantly download your assets",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
-    label: "Instant Access 2",
-    icon: Download,
-    description: "Instantly download your assets",
+    label: "Guaranteed Quality",
+    icon: CheckCircle,
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
-    label: "Instant Access 3",
-    icon: Download,
-    description: "Instantly download your assets",
+    label: "Sustainable",
+    icon: Leaf,
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
 ];
 
@@ -26,7 +26,7 @@ const Home = () => {
     <main>
       <MaxWidthWrapper>
         <div className="mx-auto py-20 text-center flex flex-col items-center max-w-3xl">
-          <h1 className="text-5xl">
+          <h1 className="text-5xl tracking-wide">
             Marketplace for high quality digital assets
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
@@ -47,8 +47,7 @@ const Home = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      {/* TODO: feature grid */}
-      <section className="bg-gray-50 rounded-lg ">
+      <section className="bg-gray-50 border-t border-t-200">
         <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
             {features.map((feature, index) => (
